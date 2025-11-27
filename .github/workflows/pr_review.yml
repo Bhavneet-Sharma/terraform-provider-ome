@@ -25,7 +25,7 @@ jobs:
       - name: Checkout the private repository
         uses: actions/checkout@v3
         with:
-          repository: bhavneetattri1995/pr-flow
+          repository: Bhavneet-Sharma/pr-flow
           token: ${{ secrets.PAT_TOKEN }}
           path: pr-flow
 

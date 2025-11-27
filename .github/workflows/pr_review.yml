@@ -56,7 +56,7 @@ jobs:
         run: |
           cd pr-flow
           poetry install --no-interaction --no-ansi
-          pip install crewai==0.74.2 crewai-tools
+          pip install crewai==0.74.2 crewai-tools setuptools
 
       - name: Run Python script
         env:

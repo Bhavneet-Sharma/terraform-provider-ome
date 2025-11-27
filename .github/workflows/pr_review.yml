@@ -55,6 +55,7 @@ jobs:
       - name: Install the project dependencies
         run: |
           cd pr-flow
+          pip install setuptools
           poetry install --no-interaction --no-ansi
           pip install crewai==0.74.2 crewai-tools setuptools
 

@@ -58,9 +58,6 @@ jobs:
           poetry install --no-interaction --no-ansi
           pip install crewai==0.74.2 crewai-tools
 
-      - name: Verify pkg_resources is present
-        run: poetry run python -c "import pkg_resources; print('ok')"
-
       - name: Run Python script
         env:
           PAT_TOKEN: ${{ secrets.PAT_TOKEN }}
@@ -73,4 +70,5 @@ jobs:
           echo $REPOSITORY
           echo "$PWD" 
           cd pr-flow
+          pip install setuptools
           crewai flow run
